@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 03 | Módulo 06 - Gestión de Paquetes NPM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Prism para resaltado de código -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-node shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-node-plus me-2 fs-4"></i>
+                <div>
+                    <span class="fw-bold">Tarea 03 | Módulo 06</span>
+                    <small class="d-block" style="font-size: 0.8rem; opacity: 0.9;">Gestión de Paquetes NPM</small>
+                </div>
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#solicitud-section"><i class="bi bi-journal-text me-1"></i>Solicitud</a>
+                <a class="nav-link" href="#codigo-section"><i class="bi bi-code-square me-1"></i>Código</a>
+                <a class="nav-link" href="#evidencias-section"><i class="bi bi-images me-1"></i>Evidencias</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <!-- SECCIÓN SOLICITUD -->
+        <section id="solicitud-section" class="mb-5">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="text-node border-bottom pb-3">
+                        <i class="bi bi-journal-text me-2"></i>Solicitud de la Tarea
+                    </h2>
+                    <p class="lead mb-4">Crear una aplicación en Node.js que muestre mensajes en la consola aplicando
+                        colores con <code>chalk</code> y formateando fechas con <code>dayjs</code> usando paquetes
+                        externos de NPM.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Card de objetivos -->
+                <div class="col-lg-8 mb-4">
+                    <div class="card border-node shadow h-100">
+                        <div class="card-header bg-node-light">
+                            <h5 class="card-title mb-0"><i class="bi bi-list-check me-2"></i>Objetivos Cumplidos</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i><strong>Inicialización
+                                                del proyecto:</strong> <code>npm init -y</code></li>
+                                        <li class="mb-2"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i><strong>Instalación
+                                                de dependencias:</strong> <code>chalk</code> y <code>dayjs</code></li>
+                                        <li class="mb-2"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i><strong>Creación
+                                                de app.js:</strong> Mensajes con colores y fechas</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i><strong>Scripts
+                                                NPM:</strong> <code>npm start</code> configurado</li>
+                                        <li class="mb-2"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i><strong>Buenas
+                                                prácticas:</strong> <code>.gitignore</code> con
+                                            <code>node_modules/</code></li>
+                                        <li class="mb-2"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i><strong>ES
+                                                Modules:</strong> Uso de <code>import</code> en lugar de
+                                            <code>require</code></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <div class="alert alert-node">
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    <strong>Nota:</strong> Esta tarea demuestra el manejo básico de paquetes externos en
+                                    Node.js,
+                                    configuración de proyectos y buenas prácticas de desarrollo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de tecnologías -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-node shadow h-100">
+                        <div class="card-header bg-node-light">
+                            <h5 class="card-title mb-0"><i class="bi bi-tools me-2"></i>Tecnologías Utilizadas</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-node">Node.js</span>
+                                <span class="badge bg-npm">NPM</span>
+                                <span class="badge bg-chalk">Chalk</span>
+                                <span class="badge bg-dayjs">Day.js</span>
+                                <span class="badge bg-bootstrap">Bootstrap 5</span>
+                                <span class="badge bg-prism">Prism.js</span>
+                            </div>
+                            <p class="small text-muted mb-0">
+                                <i class="bi bi-terminal me-1"></i>
+                                Comandos utilizados:
+                            </p>
+                            <pre class="bg-dark text-light p-2 rounded mt-2 small"><code>npm init -y
+npm install chalk dayjs
+npm start</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DEL CÓDIGO -->
+        <section id="codigo-section" class="mb-5">
+            <h2 class="text-node border-bottom pb-3 mb-4">
+                <i class="bi bi-code-slash me-2"></i>Código Fuente
+            </h2>
+
+            <!-- Pestañas -->
+            <ul class="nav nav-tabs mb-4" id="codeTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="appjs-tab" data-bs-toggle="tab" data-bs-target="#appjs-code"
+                        type="button" role="tab">
+                        <i class="bi bi-file-code me-1"></i>app.js
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="package-tab" data-bs-toggle="tab" data-bs-target="#package-code"
+                        type="button" role="tab">
+                        <i class="bi bi-file-text me-1"></i>package.json
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="gitignore-tab" data-bs-toggle="tab" data-bs-target="#gitignore-code"
+                        type="button" role="tab">
+                        <i class="bi bi-file-binary me-1"></i>.gitignore
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="codeTabsContent">
+                <!-- Tab app.js -->
+                <div class="tab-pane fade show active" id="appjs-code" role="tabpanel">
+                    <div class="card border-node shadow">
+                        <div class="card-header bg-node-light d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="bi bi-terminal me-2"></i>
+                                <strong>app.js</strong> - Aplicación principal
+                            </div>
+                            <span class="badge bg-module">ES Module</span>
+                        </div>
+                        <div class="card-body p-0">
+                            <pre class="m-0"><code class="language-javascript">
+// Importación de paquetes externos usando ES Modules
+import chalk from 'chalk';
+import dayjs from 'dayjs';
+
+// Configuración regional para español (opcional)
+// import 'dayjs/locale/es';
+// dayjs.locale('es');
+
+// Obtención y formateo de fecha actual
+const fechaActual = dayjs();
+const fechaFormateada = fechaActual.format('YYYY-MM-DD HH:mm:ss');
+
+// Mensaje de bienvenida en color verde (requerimiento)
+console.log(chalk.green('¡Bienvenido a mi aplicación Node.js!'));
+console.log(chalk.green.bold('──────────────────────────────────────'));
+
+// Mensaje adicional en color amarillo con fecha (requerimiento)
+console.log(chalk.yellow(`📅 Fecha actual: ${fechaFormateada}`));
+
+// Información extendida (opcional, para demostración)
+console.log(chalk.blue(`📋 Día de la semana: ${fechaActual.format('dddd')}`));
+console.log(chalk.magenta(`⏰ Hora local: ${fechaActual.format('HH:mm:ss')}`));
+console.log(chalk.cyan(`🗓️ Semana del año: ${fechaActual.format('WW')}`));
+
+// Validación y confirmación
+console.log(chalk.green.bold('✅ Dependencias cargadas correctamente'));
+console.log(chalk.green.bold('✅ Aplicación ejecutándose sin errores'));
+console.log(chalk.green.bold('──────────────────────────────────────'));
+                            </code></pre>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <small class="text-muted">
+                                <i class="bi bi-info-circle me-1"></i>
+                                Este archivo demuestra el uso de <code>chalk</code> para colores en consola y
+                                <code>dayjs</code> para manejo de fechas.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab package.json -->
+                <div class="tab-pane fade" id="package-code" role="tabpanel">
+                    <div class="card border-node shadow">
+                        <div class="card-header bg-node-light d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="bi bi-box me-2"></i>
+                                <strong>package.json</strong> - Configuración del proyecto
+                            </div>
+                            <span class="badge bg-npm">NPM</span>
+                        </div>
+                        <div class="card-body p-0">
+                            <pre class="m-0"><code class="language-json">
+{
+  "name": "tarea-03-modulo-06",
+  "version": "1.0.0",
+  "description": "Aplicación Node.js que muestra mensajes en consola usando chalk y dayjs",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "chalk",
+    "dayjs",
+    "npm",
+    "fullstack",
+    "javascript"
+  ],
+  "author": "Jorge Bosch",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dayjs": "^1.11.10"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/tu-repositorio"
+  }
+}
+                            </code></pre>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <small class="text-muted">
+                                <i class="bi bi-terminal me-1"></i>
+                                Comandos disponibles: <code>npm start</code> | <code>npm run dev</code>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab .gitignore -->
+                <div class="tab-pane fade" id="gitignore-code" role="tabpanel">
+                    <div class="card border-node shadow">
+                        <div class="card-header bg-node-light d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="bi bi-file-binary me-2"></i>
+                                <strong>.gitignore</strong> - Archivos ignorados por Git
+                            </div>
+                            <span class="badge bg-git">Git</span>
+                        </div>
+                        <div class="card-body p-0">
+                            <pre class="m-0"><code class="language-gitignore">
+# Dependencias de Node.js - ¡NO subir al repositorio!
+node_modules/
+
+# Logs de NPM
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de entorno (variables sensibles)
+.env
+.env.local
+.env*.local
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de construcción
+dist/
+build/
+out/
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Cobertura de tests
+coverage/
+.nyc_output
+                            </code></pre>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <small class="text-muted">
+                                <i class="bi bi-shield-check me-1"></i>
+                                Este archivo asegura que no se suban archivos innecesarios o sensibles al repositorio.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE EVIDENCIAS -->
+        <section id="evidencias-section" class="mb-5">
+            <h2 class="text-node border-bottom pb-3 mb-4">
+                <i class="bi bi-camera me-2"></i>Evidencias de Ejecución
+            </h2>
+
+            <!-- Evidencia 1 -->
+            <section class="mb-5">
+                <h3 class="border-bottom pb-2 text-primary">
+                    <i class="bi bi-folder-plus me-2"></i>1. Inicialización del Proyecto
+                </h3>
+
+                <p class="mb-4">
+                    Creación de la estructura inicial del proyecto con <code>npm init -y</code>,
+                    generando automáticamente el archivo <code>package.json</code> con la configuración
+                    básica.
+                </p>
+
+                <div class="card border-primary">
+                    <div class="card-body p-0">
+                        <img src="./img/inicioProyecto.png" class="img-fluid rounded"
+                            alt="Inicialización del proyecto con npm init">
+                    </div>
+                    <div class="card-footer bg-light text-muted">
+                        <small>
+                            <i class="bi bi-terminal me-1"></i>
+                            <code>npm init -y</code> crea package.json con valores por defecto
+                        </small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Evidencia 2 -->
+            <section class="mb-5">
+                <h3 class="border-bottom pb-2 text-primary">
+                    <i class="bi bi-download me-2"></i>2. Instalación de Paquetes
+                </h3>
+
+                <p class="mb-4">
+                    Instalación simultánea de las dependencias <code>chalk</code> y <code>dayjs</code>
+                    usando <code>npm install chalk dayjs</code>. Los paquetes se descargan a
+                    <code>node_modules/</code> y se registran en <code>package.json</code>.
+                </p>
+
+                <div class="card border-primary">
+                    <div class="card-body p-0">
+                        <img src="./img/instalacionPaquetes.png" class="img-fluid rounded"
+                            alt="Instalación de paquetes chalk y dayjs">
+                    </div>
+                    <div class="card-footer bg-light text-muted">
+                        <small>
+                            <i class="bi bi-terminal me-1"></i>
+                            <code>npm install [paquete1] [paquete2]</code> instala múltiples paquetes en un comando
+                        </small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Evidencia 3 -->
+            <section class="mb-5">
+                <h3 class="border-bottom pb-2 text-primary">
+                    <i class="bi bi-file-code me-2"></i>3. Implementación de app.js
+                </h3>
+
+                <p class="mb-4">
+                    Creación del archivo principal <code>app.js</code> que importa los paquetes,
+                    formatea la fecha actual y muestra mensajes en consola con colores usando
+                    <code>chalk.green()</code> y <code>chalk.yellow()</code>.
+                </p>
+
+                <div class="card border-primary">
+                    <div class="card-body p-0">
+                        <img src="./img/evidenciaApp.png" class="img-fluid rounded" alt="Código del archivo app.js">
+                    </div>
+                    <div class="card-footer bg-light text-muted">
+                        <small>
+                            <i class="bi bi-file-code me-1"></i>
+                            Uso de ES Modules (<code>import</code>) para cargar dependencias
+                        </small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Evidencia 4 -->
+            <section class="mb-5">
+                <h3 class="border-bottom pb-2 text-primary">
+                    <i class="bi bi-play-circle me-2"></i>4. Script NPM en Ejecución
+                </h3>
+
+                <p class="mb-4">
+                    Ejecución de la aplicación mediante <code>npm start</code>, mostrando los mensajes
+                    formateados en la consola con colores y la fecha actual correctamente formateada.
+                </p>
+
+                <div class="card border-primary">
+                    <div class="card-body p-0">
+                        <img src="./img/script.png" class="img-fluid rounded"
+                            alt="Ejecución de npm start mostrando resultados">
+                    </div>
+                    <div class="card-footer bg-light text-muted">
+                        <small>
+                            <i class="bi bi-play-btn me-1"></i>
+                            <code>npm start</code> ejecuta el script definido en package.json
+                        </small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Buenas prácticas -->
+            <section class="mb-5">
+                <h3 class="border-bottom pb-2 text-primary">
+                    <i class="bi bi-shield-check me-2"></i>5. Buenas Prácticas Implementadas
+                </h3>
+
+                <p class="mb-4">
+                    Configuración de <code>.gitignore</code> para excluir <code>node_modules/</code> del repositorio
+                    y uso de ES Modules con <code>"type": "module"</code> en package.json.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5><i class="bi bi-file-binary me-2"></i>Archivo .gitignore</h5>
+                                <p class="small">
+                                    Excluye archivos innecesarios como <code>node_modules/</code>, <code>.env</code>,
+                                    archivos de logs y configuraciones de IDE.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5><i class="bi bi-box me-2"></i>ES Modules</h5>
+                                <p class="small">
+                                    Uso de sintaxis moderna <code>import/export</code> configurando
+                                    <code>"type": "module"</code> en package.json para mejor compatibilidad futura.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5><i class="bi bi-person-circle me-2"></i>Información del Estudiante</h5>
+                    <p class="mb-1"><strong>Jorge Bosch</strong></p>
+                    <p class="mb-1">Curso Full Stack JavaScript</p>
+                    <p class="mb-0">Actividad: Gestión de Paquetes Externos en Node.js</p>
+                </div>
+                <div class="col-md-6 text-md-end mb-3">
+                    <h5><i class="bi bi-award me-2"></i>Habilidades Desarrolladas</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check text-success me-1"></i>Manejo de NPM y paquetes externos</li>
+                        <li><i class="bi bi-check text-success me-1"></i>Configuración de proyectos Node.js</li>
+                        <li><i class="bi bi-check text-success me-1"></i>Uso de ES Modules en Node.js</li>
+                        <li><i class="bi bi-check text-success me-1"></i>Buenas prácticas con Git</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-light my-3">
+            <p class="text-center mb-0">
+                <i class="bi bi-github me-1"></i> Módulo 6 - Desarrollo de Aplicaciones Web con Node.js y Express
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-diff.min.js"></script>
+</body>
+
+</html>

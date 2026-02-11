@@ -1,0 +1,356 @@
+/* ---------------------------
+   Variables CSS para colores Node.js
+--------------------------- */
+:root {
+    --node-green: #339933;
+    --node-green-light: #68a063;
+    --node-green-dark: #267326;
+    --node-dark: #333333;
+    --npm-red: #cb3837;
+    --chalk-blue: #61dafb;
+    --dayjs-purple: #9c27b0;
+}
+
+/* ---------------------------
+   Estilos generales
+--------------------------- */
+body {
+    background-color: #f8f9fa;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--node-green);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #6c757d;
+}
+
+/* ---------------------------
+   Navbar - Node.js colors
+--------------------------- */
+.navbar-node {
+    background: linear-gradient(135deg, var(--node-dark) 0%, var(--node-green) 100%) !important;
+    box-shadow: 0 4px 12px rgba(51, 153, 51, 0.3);
+    padding: 0.8rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: all 0.2s;
+    padding: 0.5rem 1rem !important;
+    border-radius: 4px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------------------------
+   Badges personalizados
+--------------------------- */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+.bg-node {
+    background-color: var(--node-green) !important;
+}
+
+.bg-npm {
+    background-color: var(--npm-red) !important;
+    color: white;
+}
+
+.bg-chalk {
+    background-color: var(--chalk-blue) !important;
+    color: #212529;
+}
+
+.bg-dayjs {
+    background-color: var(--dayjs-purple) !important;
+    color: white;
+}
+
+.bg-module {
+    background-color: #6f42c1 !important;
+    color: white;
+}
+
+.bg-git {
+    background-color: #f05032 !important;
+    color: white;
+}
+
+.bg-bootstrap {
+    background-color: #7952b3 !important;
+    color: white;
+}
+
+.bg-prism {
+    background-color: #f5da55 !important;
+    color: #212529;
+}
+
+/* ---------------------------
+   Tarjetas y secciones
+--------------------------- */
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card.border-node {
+    border-color: var(--node-green) !important;
+    border-width: 2px;
+}
+
+.card-header.bg-node-light {
+    background-color: rgba(51, 153, 51, 0.1) !important;
+    border-bottom: 1px solid rgba(51, 153, 51, 0.2);
+    font-weight: 600;
+    color: var(--node-green);
+}
+
+.card-footer.bg-light {
+    background-color: #f8f9fa !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* ---------------------------
+   Alertas personalizadas
+--------------------------- */
+.alert-node {
+    background-color: rgba(51, 153, 51, 0.1);
+    border-color: rgba(51, 153, 51, 0.2);
+    color: var(--node-green-dark);
+}
+
+/* ---------------------------
+   Texto con colores Node.js
+--------------------------- */
+.text-node {
+    color: var(--node-green) !important;
+}
+
+/* ---------------------------
+   Pestañas (tabs)
+--------------------------- */
+.nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.nav-tabs .nav-link {
+    color: #6c757d;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link:hover {
+    color: var(--node-green);
+    background-color: rgba(51, 153, 51, 0.05);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--node-green);
+    background-color: white;
+    border-bottom: 3px solid var(--node-green);
+}
+
+/* ---------------------------
+   Bloques de código con Prism
+--------------------------- */
+pre[class*="language-"] {
+    border-left: 4px solid var(--node-green) !important;
+    max-height: 500px;
+    background: #f8fafc !important;
+    border-radius: 0 8px 8px 0 !important;
+    padding: 1.5rem !important;
+    margin: 0 !important;
+    overflow: auto;
+    font-size: 0.9rem;
+}
+
+.token.keyword {
+    color: var(--node-green) !important;
+    font-weight: bold;
+}
+
+.token.function {
+    color: var(--node-green-light) !important;
+}
+
+.token.string {
+    color: #198754 !important;
+}
+
+.token.comment {
+    color: #6c757d !important;
+    font-style: italic;
+}
+
+/* ---------------------------
+   Imágenes de evidencias
+--------------------------- */
+.evidencia-img {
+    max-height: 250px;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s;
+}
+
+.evidencia-img:hover {
+    transform: scale(1.02);
+}
+
+/* ---------------------------
+   Footer
+--------------------------- */
+footer {
+    background: linear-gradient(135deg, var(--node-dark) 0%, #212529 100%);
+    color: #f8f9fa;
+    padding: 3rem 0 1.5rem;
+    margin-top: 3rem;
+}
+
+footer h5 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+footer hr.border-light {
+    opacity: 0.2;
+    margin: 1.5rem 0;
+}
+
+/* ---------------------------
+   Responsive
+--------------------------- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    pre[class*="language-"] {
+        padding: 1rem !important;
+        font-size: 0.85rem;
+    }
+    
+    .evidencia-img {
+        max-height: 200px;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem !important;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.25em 0.5em;
+    }
+}
+
+/* ---------------------------
+   Evidencias a pantalla completa
+--------------------------- */
+.card.border-primary .card-body.p-0 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.card.border-primary {
+    border-width: 2px;
+    overflow: hidden;
+}
+
+.card.border-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Mejorar la legibilidad del texto */
+section p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #495057;
+}
+
+/* Ajustes para títulos de evidencias */
+#evidencias-section h3 {
+    color: var(--node-green);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(51, 153, 51, 0.2);
+}
