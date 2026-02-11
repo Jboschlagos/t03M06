@@ -1,4 +1,4 @@
-📦 Tarea 03 - Módulo 06: Gestión de Paquetes NPM en Node.js
+# 📦 Tarea 03 - Módulo 06: Gestión de Paquetes NPM en Node.js
 📋 Descripción
 Aplicación Node.js que demuestra el uso de paquetes externos (chalk y dayjs) para mostrar mensajes en consola con colores y fechas formateadas.
 
